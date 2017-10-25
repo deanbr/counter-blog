@@ -1,0 +1,8 @@
+---
+layout:     post
+title:      "Co-worker Biki Field Trip"
+subtitle:   "Reason for bailing: \"I don't want to get sweaty.\""
+date:       2017-10-24 11:59:00
+author:     "markysparky"
+header-img: "img/biki.gif"
+---

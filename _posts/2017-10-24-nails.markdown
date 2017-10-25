@@ -1,0 +1,8 @@
+---
+layout:     post
+title:      "AIGA Designer Dialogue"
+subtitle:   "Reason for bailing: \"Got nails did.\""
+date:       2017-10-24 12:01:00
+author:     "Designers"
+header-img: "img/nails.gif"
+---
