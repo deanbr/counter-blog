@@ -26,6 +26,21 @@
     <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+    <!-- FlipClockJS CSS -->
+    <link rel="stylesheet" href="/startbootstrap-clean-blog-jekyll/css/flipclock.css ">
+
+    <!-- jQuery -->
+    <script src="/startbootstrap-clean-blog-jekyll/js/jquery.min.js "></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/startbootstrap-clean-blog-jekyll/js/bootstrap.min.js "></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/startbootstrap-clean-blog-jekyll/js/clean-blog.min.js "></script>
+
+    <!-- Load FlipClockJS -->
+    <script src="/startbootstrap-clean-blog-jekyll/js/flipclock.min.js "></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,7 +94,59 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>JenFlakedOnUs</h1>
+                    <!-- Counter -->
+<div class="clock" style="margin:auto; width: 30%;"></div>
+
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+
+        // Instantiate a counter
+        clock = new FlipClock($('.clock'),
+        3,
+        {
+            clockFace: 'Counter'
+        });
+
+        // Attach a click event to a button a increment the clock
+        $('.increment').click(function() {
+            //clock.setValue(10);
+
+            // Or you could decrease the clock
+            // clock.decrement();
+
+            clock.increment();
+
+            // Or set it to a specific value
+            // clock.setValue(x);
+        });
+
+        // Attach a click event to a button a decrement the clock
+        $('.decrement').click(function() {
+            clock.decrement();
+        });
+
+        $('.reset').click(function() {
+            clock.reset();
+        });
+
+        /*
+        // Use this code if you want to autoincrement the counter.
+        var timer = new FlipClock.Timer(clock, {
+            callbacks: {
+                interval: function() {
+                    clock.increment();
+                }
+            }
+        });
+
+        timer.start();
+        */
+    });
+</script>
+
+                    <!--<h1>JenFlakedOnUs</h1>-->
                     <!--<hr class="small">-->
                     <!--<span class="subheading">A Clean Blog Theme by Start Bootstrap</span>-->
                 </div>
@@ -137,15 +204,6 @@
         </div>
     </div>
 </footer>
-
-<!-- jQuery -->
-<script src="/startbootstrap-clean-blog-jekyll/js/jquery.min.js "></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/startbootstrap-clean-blog-jekyll/js/bootstrap.min.js "></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="/startbootstrap-clean-blog-jekyll/js/clean-blog.min.js "></script>
 
 
     
